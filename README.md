@@ -2,6 +2,8 @@
 
 Model created to simulate the HLTV (https://hltv.org) CS:GO players rating using the matches stats.
 
+![Plots](images/plots.png)
+
 ## Train
 
 Execute the following command to train the model:
