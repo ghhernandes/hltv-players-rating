@@ -1,6 +1,6 @@
 # HLTV 2.0 Players Rating
 
-Model created to predict the HLTV (https://hltv.org) CS:GO players rating using the matchs stats.
+Model created to predict the HLTV (https://hltv.org) CS:GO players rating using match stats.
 
 ![Plots](images/plots.png)
 
