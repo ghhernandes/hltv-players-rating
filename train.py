@@ -7,6 +7,7 @@ from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error
 import pickle
 
 
+
 def preprocess(df: pd.DataFrame):
     df.dropna(inplace=True)
     df['kast'] = df['kast'].map(lambda x: float(x.strip('%')) / 100.0)
@@ -16,7 +17,7 @@ def preprocess(df: pd.DataFrame):
     return (X, y)
 
 def save(model):
-    with open('model.pkl', 'wb') as f:
+    with open('models/model.pkl', 'wb') as f:
         pickle.dump(model, f)
 
 def train(df: pd.DataFrame):
@@ -40,7 +41,7 @@ def train(df: pd.DataFrame):
     return model 
 
 if __name__ == '__main__':
-    dfstats = pd.read_csv('stats.csv')
+    dfstats = pd.read_csv('data/stats.csv')
     print(dfstats.head())
 
     model = train(dfstats)
