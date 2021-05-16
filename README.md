@@ -4,6 +4,8 @@ Model created to simulate the HLTV (https://hltv.org) CS:GO players rating using
 
 ![Plots](images/plots.png)
 
+Score: 99.77%
+    
 ## Train
 
 Execute the following command to train the model:
